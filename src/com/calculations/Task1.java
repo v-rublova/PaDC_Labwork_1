@@ -4,19 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Task1 {
-
-    FileWriter fileWriter;
-    PrintWriter printWriter;
-
-    private void SetFileName(String name) throws IOException {
-        fileWriter = new FileWriter(name);
-        printWriter = new PrintWriter(fileWriter);
-    }
-
-    public void CloseFile() {
-        printWriter.close();
-    }
+public class Task1 extends Parent{
 
     public void PerformCalc_int(String filename, int lim, boolean rc_sw) throws IOException {
         this.SetFileName(filename);
