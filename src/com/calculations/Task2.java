@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Task2 extends Parent {
+public class Task2 extends FileAccess {
 
     public void Check(String filename,int lim,byte sw) throws IOException {
         this.SetFileName(filename);

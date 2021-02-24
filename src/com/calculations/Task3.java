@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Task3 extends Parent {
+public class Task3 extends FileAccess {
     private void InsertData(HashSet<Integer> set, int cap) {
         for (int i = 0; i < cap; i++) {
             set.add(i);
@@ -28,7 +28,7 @@ public class Task3 extends Parent {
             assertTrue(aHashStructure.contains(aElement));
         }
 
-        System.out.println("Time (ms)=" + (System.currentTimeMillis() - aStartTime));
+        System.out.println("Time_single (ms)=" + (System.currentTimeMillis() - aStartTime));
     }
     void CheckAll(int cap) {
         final HashSet aHashStructure = new HashSet(cap);
@@ -42,6 +42,6 @@ public class Task3 extends Parent {
             assertTrue(aHashStructure.contains(aElement));
         }
 
-        System.out.println("Time (ms)=" + (System.currentTimeMillis() - aStartTime));
+        System.out.println("Time_all (ms)=" + (System.currentTimeMillis() - aStartTime));
     }
 }

@@ -1,10 +1,8 @@
 package com.calculations;
 
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-public class Task1 extends Parent{
+public class Task1 extends FileAccess {
 
     public void PerformCalc_int(String filename, int lim, boolean rc_sw) throws IOException {
         this.SetFileName(filename);

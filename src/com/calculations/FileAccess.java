@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class Parent {
+class FileAccess {
     FileWriter fileWriter;
     PrintWriter printWriter;
 
